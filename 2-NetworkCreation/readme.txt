@@ -1,0 +1,5 @@
+For all SNPs selected after filtering, we calculate the pairwise information gain using the following java code. We also, generate 1000 permutations of the dataset by shuffling phenotypes and assigning them to the samples and calculate the pair-wise information gain for all SNPs of every permutated dataset as well.
+
+As implemented in “calculatingIG_pcount/MainNetPermutations.java”, to get the result faster, we ran 100 different instances of the code, where each generates the IG between all SNPs as well as the IG for 10 permutations and calculates P (P here is a short number counting the number of permutations with value greater than or equal to the value of the IG for our dataset). 
+
+Then, the code “mergingResults_netParameters/Main_GC_IGs_pCount” is used to create the network for different IG cut off values (from 0.02 to 0.008 decrementing by 0.001) and observe the change of different features like the number of vertices, the number of edges, the degree distribution and the size of the largest component.
