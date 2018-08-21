@@ -11,6 +11,7 @@ feel free to e-mail any questions to Ting Hu or Somayeh Kafaie at:
 ------------------------------------------------------------------
 
 DIRECTORIES:
+
     1-Filtering:    	 
 	This program receives genome information of samples froma file (inputFile) in the 	following format and returns the result in a file (outputFile) with a similar 		format including only selected SNPs (instead of all of them).
         - inputFileFormat:
@@ -39,6 +40,9 @@ DIRECTORIES:
 	3-2-calSignificance_Clustering_Assortativity:
 	   This program reads the list of edges of the network (for a given IG_th) and 		   creates its adjacency matrix and graph. Then, by swapping the edges 			   (n_swapped_edges*#edges) times, we create random networks and repeat this to 	   generate 1000 (i.e., n_rand_networks) random networks. By measuring clustering 	   coefficient and assortativity coefficient for the real network as well as all 	   random networks, we calculate p value and return it.
 
+------------------------------------------------------------------
 PACKAGES TO INSTALL:
+
   The code has been written in java using Eclipse IDE.
 
+------------------------------------------------------------------
